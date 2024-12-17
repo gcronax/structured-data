@@ -17,19 +17,19 @@ public class ej3_2 {
 
         for (int num : n) {
             sum += num;
-            if (num > max) max = num;
-            if (num < min) min = num;
+            if (num > max) {max = num;}
+            if (num < min) {min = num;}
         }
 
-        System.out.println("Números: " + n);
-        System.out.println("Suma de los números: " + sum);
-        System.out.println("Número mayor: " + max);
-        System.out.println("Número menor: " + min);
+        System.out.println("numbers: " + n);
+        System.out.println("Suma: " + sum);
+        System.out.println("mayor: " + max);
+        System.out.println("menor: " + min);
 
         Collections.sort(n);
-        System.out.println("Lista en orden ascendente: " + n);
+        System.out.println("ascendente: " + n);
 
         Collections.sort(n, Collections.reverseOrder());
-        System.out.println("Lista en orden descendente: " + n);
+        System.out.println("descendente: " + n);
     }
 }
