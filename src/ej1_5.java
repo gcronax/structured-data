@@ -1,4 +1,4 @@
-public class ej5 {
+public class ej1_5 {
     public static void main(String[] args) {
         int[] n = {5, 2, 9, 1, 3};
 

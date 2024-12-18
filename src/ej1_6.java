@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ej6 {
+public class ej1_6 {
     public static int[] rotarDerecha(int[] fila, int n) {
         int[] raux = new int[fila.length + 1];
         raux[0] = n;

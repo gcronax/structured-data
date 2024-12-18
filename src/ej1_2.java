@@ -1,4 +1,4 @@
-public class ej2 {
+public class ej1_2 {
     public static void main(String[] args) {
         int[] n = {3, 5, 7, 2, 8};
         double suma=0;

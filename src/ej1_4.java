@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ej4 {
+public class ej1_4 {
     public static void main(String[] args) {
         int[] n = {5, 2, 9, 1, 3};
 

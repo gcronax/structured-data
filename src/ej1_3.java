@@ -1,4 +1,4 @@
-public class ej3 {
+public class ej1_3 {
     public static void main(String[] args) {
         int[] n=new int[5];
         n[0]=1;
