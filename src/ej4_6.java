@@ -1,42 +1,26 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class ej4_6 {
-    public static void main(String[] args) {
-        String prueba="abc";
-        String retorno="";
-        for (int i = 0; i < prueba.length(); i++) {
-            retorno+=prueba.charAt(i);
-            for (int j = 0; j < prueba.length(); j++) {
-                retorno+=prueba.charAt(j);
-                for (int k = 0; k < prueba.length(); k++) {
-                    retorno+=prueba.charAt(k);
-
-                    System.out.println(retorno.length()==3?retorno:"");
-                    
-                    retorno="";
-        
-                }
-                retorno="";
-
+    
+    public static void generara(String str, String permuta, List<String> resultado) {
+        if (str.isEmpty()) {
+            resultado.add(permuta);
+        } else {
+            for (int i = 0; i < str.length(); i++) {
+                char c = str.charAt(i);
+                String aux = str.substring(0, i) + str.substring(i + 1);
+                generara(aux, permuta + c, resultado);
             }
-            retorno="";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-
         }
-        
-        
     }
-    public static void generar(String aux,String prueba){
-        if (prueba.length()<=aux.length()) {
+    public static void main(String[] args) {
+        String cadena = "12345";
+        ArrayList<String> resultado = new ArrayList<>();
+        generara(cadena, "", resultado);
+        for (String aux : resultado) {
             System.out.println(aux);
-        }else{
-            for (int i = 0; i < prueba.length(); i++) {
-                aux+=prueba.charAt(i);
-                try {
-                    generar(aux, prueba);
-                } catch (Exception e) {
-                    System.out.println(aux);
-                }
-                aux="";
-            }
-        }
+        }  
     }
     
 }
