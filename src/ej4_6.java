@@ -15,11 +15,12 @@ public class ej4_6 {
         
                 }
                 retorno="";
-    
+
             }
-            retorno="";
+            retorno="";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 
         }
+        
         
     }
     public static void generar(String aux,String prueba){
