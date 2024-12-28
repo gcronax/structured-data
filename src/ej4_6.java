@@ -13,6 +13,7 @@ public class ej4_6 {
                 generara(aux, permuta + c, resultado);
             }
         }
+        //Backtracking
     }
     public static void main(String[] args) {
         String cadena = "12345";
@@ -21,6 +22,8 @@ public class ej4_6 {
         for (String aux : resultado) {
             System.out.println(aux);
         }  
+        //david si me lees vamos de miticas?
+        
     }
     
 }
