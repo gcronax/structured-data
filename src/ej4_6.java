@@ -1,9 +1,8 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class ej4_6 {
     
-    public static void generara(String str, String permuta, List<String> resultado) {
+    public static void generara(String str, String permuta, ArrayList<String> resultado) {
         if (str.isEmpty()) {
             resultado.add(permuta);
         } else {
@@ -22,7 +21,6 @@ public class ej4_6 {
         for (String aux : resultado) {
             System.out.println(aux);
         }  
-        //david si me lees vamos de miticas?
         
     }
     
